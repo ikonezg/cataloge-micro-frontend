@@ -25,6 +25,13 @@
     "shell-e2e": {
       "tags": [],
       "implicitDependencies": ["shell"]
+    },
+    "catalogue": {
+      "tags": []
+    },
+    "catalogue-e2e": {
+      "tags": [],
+      "implicitDependencies": ["catalogue"]
     }
   }
 }
