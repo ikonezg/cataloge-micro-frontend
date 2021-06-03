@@ -25,10 +25,18 @@ export class LookupService {
       {
         remoteEntry: 'http://localhost:3000/remoteEntry.js',
         remoteName: 'catalogue',
-        exposedModule: './Component',
+        exposedModule: './Weather',
 
-        displayName: 'Component',
-        componentName: 'AppComponent',
+        displayName: 'Weather',
+        componentName: 'WeatherComponent',
+      },
+      {
+        remoteEntry: 'http://localhost:3000/remoteEntry.js',
+        remoteName: 'catalogue',
+        exposedModule: './StarWars',
+
+        displayName: 'StarWars',
+        componentName: 'StarwarsComponent',
       },
       // {
       //     remoteEntry: 'http://localhost:3000/remoteEntry.js',

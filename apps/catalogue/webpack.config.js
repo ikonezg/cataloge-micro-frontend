@@ -27,7 +27,9 @@ module.exports = {
         name: "catalogue",
         filename: "remoteEntry.js",
         exposes: {
-            './Component': './apps/catalogue/src/app/app.component.ts',
+            // './Component': './apps/catalogue/src/app/app.component.ts',
+            './Weather': './apps/catalogue/src/app/weather/weather.component.ts',
+            './StarWars': './apps/catalogue/src/app/starwars/starwars.component.ts',
         },        
         
         // For hosts (please adjust)
@@ -41,7 +43,7 @@ module.exports = {
           "@angular/common": { singleton: true, strictVersion: true }, 
           "@angular/common/http": { singleton: true, strictVersion: true }, 
           "@angular/router": { singleton: true, strictVersion: true },
-
+          "@angular/material": { singleton: true, strictVersion: true},
           ...sharedMappings.getDescriptors()
         }
         

@@ -1,5 +1,7 @@
-shell
-<h1>micro</h1>
-<div *ngFor="let p of plugins">
+<mat-toolbar color="primary"
+  ><button mat-button (click)="add()">Add</button> 360 Shell
+</mat-toolbar>
+
+<div *ngFor="let p of widget; let i = index; trackBy: trackByFn">
   <cutomer-poc-proxy [options]="p"></cutomer-poc-proxy>
 </div>
