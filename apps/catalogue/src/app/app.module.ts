@@ -6,9 +6,17 @@ import { WeatherComponent } from './weather/weather.component';
 import { StarwarsComponent } from './starwars/starwars.component';
 import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent, WeatherComponent, StarwarsComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatCardModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatTableModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

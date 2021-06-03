@@ -44,6 +44,7 @@ module.exports = {
           "@angular/common/http": { singleton: true, strictVersion: true }, 
           "@angular/router": { singleton: true, strictVersion: true },
           "@angular/material": { singleton: true, strictVersion: true},
+          
           ...sharedMappings.getDescriptors()
         }
         

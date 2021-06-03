@@ -1,18 +1,23 @@
-<mat-card class="example-card">
-  <mat-card-header>
-    <mat-card-title>Zagreb</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <!-- start slipsum code -->
+<ng-container *ngIf="weather$ | async as weather">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Zagreb</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <!-- start slipsum code -->
 
-    My money's in that office, right? If she start giving me some bullshit about
-    it ain't there, and we got to go someplace else and get it, I'm gonna shoot
-    you in the head then and there. Then I'm gonna shoot that bitch in the
-    kneecaps, find out where my goddamn money is. She gonna tell me too. Hey,
-    look at me when I'm talking to you, motherfucker. You listen: we go in
-    there, and that nigga Winston or anybody else is in there, you the first
-    motherfucker to get shot. You understand?
+      <div class="title">Station: {{ weather.name | titlecase }}</div>
+      <div class="container">
+        <div class="icon">
+          <span *ngFor="let item of weather.weather">{{
+            item.description
+          }}</span>
+        </div>
+        <div class="temp">{{ weather.main.temp }}</div>
+        {{ weather.name }}
+      </div>
 
-    <!-- end slipsum code -->
-  </mat-card-content>
-</mat-card>
+      <!-- end slipsum code -->
+    </mat-card-content>
+  </mat-card>
+</ng-container>
