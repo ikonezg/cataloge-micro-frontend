@@ -1,0 +1,13 @@
+:host {
+  background-color: red;
+}
+
+.dashboard {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  .item {
+    padding: 1rem;
+  }
+}

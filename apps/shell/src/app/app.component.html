@@ -2,6 +2,9 @@
   ><button mat-button (click)="add()">Add</button> 360 Shell
 </mat-toolbar>
 
-<div *ngFor="let p of widget; let i = index; trackBy: trackByFn">
-  <cutomer-poc-proxy [options]="p"></cutomer-poc-proxy>
-</div>
+<section class="dashboard">
+  <div class="item" *ngFor="let p of widget; let i = index; trackBy: trackByFn">
+    <!-- <cutomer-poc-proxy [options]="p"></cutomer-poc-proxy> -->
+    <ng-container #placeHolder></ng-container>
+  </div>
+</section>

@@ -8,6 +8,8 @@ import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 @NgModule({
   declarations: [AppComponent, WeatherComponent, StarwarsComponent],
   imports: [
@@ -16,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatCardModule,
     MatTableModule,
+    MatToolbarModule,
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

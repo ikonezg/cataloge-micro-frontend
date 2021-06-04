@@ -17,7 +17,9 @@ export class AppComponent implements OnInit, AfterViewInit {
   async ngOnInit(): Promise<void> {}
 
   async ngAfterViewInit(): Promise<void> {
-    this.plugins = await this.lookupService.lookup();
+    // this.plugins = await this.lookupService.lookup();
+    this.plugins = this.lookupService.instantLookup();
+    // this.widget = this.lookupService.instantLookup();
 
     // throw new Error('Method not implemented.');
   }

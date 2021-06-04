@@ -32,6 +32,13 @@
     "catalogue-e2e": {
       "tags": [],
       "implicitDependencies": ["catalogue"]
+    },
+    "client-catalogue": {
+      "tags": []
+    },
+    "client-catalogue-e2e": {
+      "tags": [],
+      "implicitDependencies": ["client-catalogue"]
     }
   }
 }
