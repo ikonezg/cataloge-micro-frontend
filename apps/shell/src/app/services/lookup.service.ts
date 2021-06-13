@@ -22,14 +22,14 @@ export class LookupService {
         displayName: 'StarWars',
         componentName: 'StarwarsComponent',
       },
-      {
-        remoteEntry: 'http://localhost:5001/remoteEntry.js',
-        remoteName: 'clientCatalogue',
-        exposedModule: './ClientCatalogue',
+      // {
+      //   remoteEntry: 'http://localhost:5001/remoteEntry.js',
+      //   remoteName: 'clientCatalogue',
+      //   exposedModule: './ClientCatalogue',
 
-        displayName: 'ClientCatalogue',
-        componentName: 'AppComponent',
-      },
+      //   displayName: 'ClientCatalogue',
+      //   componentName: 'AppComponent',
+      // },
     ] as PluginOptions[]);
   }
 
