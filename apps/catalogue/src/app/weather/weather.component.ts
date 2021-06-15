@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpBackend, HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -45,10 +45,14 @@ export class WeatherComponent implements OnInit {
     }),
   };
   weather$!: Observable<Weather>;
-  constructor(private http: HttpClient) {}
+
+  httpClientNoInterceptor!: HttpClient;
+  constructor(private http: HttpClient, private handler: HttpBackend) {
+    this.httpClientNoInterceptor = new HttpClient(this.handler);
+  }
 
   ngOnInit(): void {
-    this.weather$ = this.http.get<Weather>(
+    this.weather$ = this.httpClientNoInterceptor.get<Weather>(
       `http://api.openweathermap.org/data/2.5/weather?q=zagreb&appid=${this.key}`
     );
   }
