@@ -30,6 +30,7 @@ module.exports = {
             // './Component': './apps/catalogue/src/app/app.component.ts',
             './Weather': './apps/catalogue/src/app/weather/weather.component.ts',
             './StarWars': './apps/catalogue/src/app/starwars/starwars.component.ts',
+            './UserInfo': './apps/catalogue/src/app/user-info/user-info.component.ts',
         },        
         
         // For hosts (please adjust)

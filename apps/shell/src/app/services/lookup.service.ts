@@ -9,6 +9,14 @@ export class LookupService {
       {
         remoteEntry: 'http://localhost:3000/remoteEntry.js',
         remoteName: 'catalogue',
+        exposedModule: './UserInfo',
+
+        displayName: 'UserInfo',
+        componentName: 'UserInfoComponent',
+      },
+      {
+        remoteEntry: 'http://localhost:3000/remoteEntry.js',
+        remoteName: 'catalogue',
         exposedModule: './Weather',
 
         displayName: 'Weather',
@@ -35,6 +43,14 @@ export class LookupService {
 
   instantLookup(): PluginOptions[] {
     return [
+      {
+        remoteEntry: 'http://localhost:3000/remoteEntry.js',
+        remoteName: 'catalogue',
+        exposedModule: './UserInfo',
+
+        displayName: 'UserInfo',
+        componentName: 'UserInfoComponent',
+      },
       {
         remoteEntry: 'http://localhost:3000/remoteEntry.js',
         remoteName: 'catalogue',
