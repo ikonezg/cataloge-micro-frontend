@@ -1,0 +1,19 @@
+<ng-container *ngIf="fakeUser$ | async as user">
+    <mat-card>
+        <mat-card-header>
+            <img mat-card-avatar [src]="user.picture.medium">
+            <mat-card-title>{{user.name.first}} {{user.name.last}}</mat-card-title>
+        </mat-card-header>
+        <hr>
+        <mat-card-content>
+            <p>Age: {{user.dob.age}}</p>
+            <p>Location: {{user.location.country}}</p>
+            <p>Email: {{user.email}}</p>
+            <p>cell: {{user.cell}}</p>
+            <p>phone: {{user.phone}}</p>
+
+        </mat-card-content>
+    </mat-card>
+    
+
+</ng-container>

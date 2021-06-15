@@ -10,8 +10,9 @@ import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { UserInfoComponent } from './user-info/user-info.component';
 @NgModule({
-  declarations: [AppComponent, WeatherComponent, StarwarsComponent],
+  declarations: [AppComponent, WeatherComponent, StarwarsComponent, UserInfoComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
